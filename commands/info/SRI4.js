@@ -17,7 +17,7 @@ module.exports = {
 
             Wie heeft je geinvite:
             Minecraft naam:`)
-            .setColor("#ba90f1")
+            .setColor("#4EF0E8")
 
         message.delete().catch(err => console.log(err));
         return message.channel.send(botEmbed);
