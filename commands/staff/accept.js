@@ -19,14 +19,13 @@ module.exports = {
             var botIcon = bot.user.displayAvatarURL;
 
             var botEmbed = new discord.MessageEmbed()
-                .setTitle("EWA - EVENT")
-                .setDescription(`Een nieuw event is geplanned
+                .setTitle("Nieuw Team")
+                .setDescription(`Een nieuw team is aangemaakt
 
-                                 **Door:** ${dUser}
-                                 **Wanneer:** Datum`)
-                .setFooter("Reageer met ✅ om je deelname aan te geven")
-                .setColor("#6cf567")
-                .setThumbnail("https://cdn.discordapp.com/attachments/777316504878317618/777905038768078868/EWA_Discord.png")
+                                 **Eigenaar:** ${dUser}
+                                 **Leden:** ${dMessage}`)
+                .setColor("#85e0ff")
+                .setThumbnail("https://icons.iconarchive.com/icons/chrisl21/minecraft/72/Stone-Axe-icon.png")
 
             return message.channel.send(botEmbed);
         }
