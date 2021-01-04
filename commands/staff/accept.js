@@ -23,7 +23,7 @@ module.exports = {
                 .setDescription(`Een nieuw team is aangemaakt
 
                                  **Eigenaar:** ${dUser}
-                                 **Leden:** ${dMessage}`)
+                                 ${dMessage}`)
                 .setColor("#85e0ff")
                 .setThumbnail("https://icons.iconarchive.com/icons/chrisl21/minecraft/72/Stone-Axe-icon.png")
 
