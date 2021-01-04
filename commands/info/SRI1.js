@@ -13,8 +13,8 @@ module.exports = {
             **Server IP:**
             Etalive.mygs.co
 
-            
-            **Het Concept**
+
+            **Het Concept:**
 
             Een friendly whitelisted survival wereld.
             Vanilla minecraft.
@@ -29,7 +29,7 @@ module.exports = {
             De trade zone is een zone van 1000 blokken vanaf nul
 
 
-            **De Map**
+            **De Map:**
 
             We hebben een live map waar je elkaar kan zien.
             Seed: 8426026102288270951

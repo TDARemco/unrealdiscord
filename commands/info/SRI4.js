@@ -1,31 +1,22 @@
 ﻿const discord = require("discord.js");
 module.exports = {
-    name: 'SRI4',
+    name: 'INFO4',
     category: 'server',
-    description: 'SRI4',
+    description: 'INFO4',
     run: async (bot, message, args, guild) => {
 
         var botIcon = bot.user.displayAvatarURL;
 
         var botEmbed = new discord.MessageEmbed()
-            .setTitle("Ons Team")
+            .setTitle("Whitelist aanvraag")
             .setDescription(`
-            Hier staat onze hall of fame, dit zijn helden die mee werken aan de livestream. Moderaten, editen, of een grote bijdragen hebben geleverd aan de stream.
+            Wanneer ik je geinvite heb is de eerste niet nodig.
+            Dit doe ik alleen om het kanaal overzichtelijk te houden.
 
-             **Steamer**
-             - [TDA] Remco D
-             
-             **Head Moderator**
-             - Daphne
-             
-             **Moderator**
-             - Ozzie
-             - Kerrie
-             - Lootjuh_NL
-             - Neitna
-             - [TDA]Krikke
-             - Apply
-             - MCmiauw`)
+            Gebruik het volgende format:
+
+            Wie heeft je geinvite:
+            Minecraft naam:`)
             .setColor("#ba90f1")
 
         message.delete().catch(err => console.log(err));
