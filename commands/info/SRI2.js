@@ -3,7 +3,7 @@ module.exports = {
     name: 'INFO2',
     category: 'server',
     description: 'INFO2',
-    run: async (bot, message, args, guild) => {
+    run: async (bot, message, args, guild) => { 
 
         var botIcon = bot.user.displayAvatarURL;
 
