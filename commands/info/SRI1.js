@@ -10,30 +10,23 @@ module.exports = {
         var botEmbed = new discord.MessageEmbed()
             .setTitle("Informatie")
             .setDescription(`    
-            **Server IP:**
+            **Server ip:**
             Etalive.mygs.co
 
+            **Conecept uitleg:**
+            Een vanilla survival server zonder een ingame currency.
+            Iedereen begint op de zelfde locatie genaamd het 0 punt.
+            Je hebt vanaf het 0 punt een zone van 1000 blokken genaamd de trade zone.
+            Hier mag je je base niet maken, Het is dus dan ook de bedoeling om hier alleen shops te maken.
+            Wanneer de enderdragon verslagen hebben dan houd het spel niet op....
+            Als team zijnde ga je dan projecten maken (bijvoorbeeld een kasteel bouwen of een stad bouwen.)
+            Zo krijgen we uiteindelijk een wereld met veel mooie bouwwerken die we van elkaar kunnen bewonderen.
+            Niks word ingecheat dus ook niet vanuit staff.
 
-            **Het Concept:**
-
-            Een friendly whitelisted survival wereld.
-            Vanilla minecraft.
-            Iedereen begint op de coördinaten X: 0 Y: 74 Z: 0 (je spawned hier vanzelf)
-            Alles word vastgelegd in de logs dus stelen/greeven is een no go 
-
-
-            **Trade Zone:**
-
-            De trade zone is een zone waar je gebouwen mag maken die alleen bedoeld zijn voor het traden van spullen.
-            Er is geen in game currency dus je zult moeten traden met spullen net zoals vroeger gebeurde.
-            De trade zone is een zone van 1000 blokken vanaf nul
-
-
-            **De Map:**
-
-            We hebben een live map waar je elkaar kan zien.
-            Seed: 8426026102288270951
-            http://51.195.33.175:8123/`)
+            **Live map:**
+            http://51.195.33.175:8123/
+            **seed:**
+            8426026102288270951`)
             .setColor("#34c9eb")
 
         message.delete().catch(err => console.log(err));

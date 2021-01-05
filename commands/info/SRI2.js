@@ -10,17 +10,33 @@ module.exports = {
         var botEmbed = new discord.MessageEmbed()
             .setTitle("Regels")
             .setDescription(`    
-            **Team:**
-            In jou 'Team' zitten alleen spelers die je zelf geinvite hebt via @EtaLive.
-
-            **De start:**
-            -Je start op de coordinaten X:0 Y:74 Z: 0
-            -Je start met helemaal niks.
-            -Wil je je huis bouwen? ga uit de trade zone!
-
+            **Algemene regels:**
+            - Focus op samenwerken en gun elkaar ook iets. Ga elkaar dus niet tegenwerken.
+            - Het is een PVE server dus ga ook geen traps voor elkaar maken.
+            - Niet grieven.
+            - Niet stelen.
+            - Trollen kan MAAR er zijn grenzen dus stop ook als iemand het aangeeft!
+            - Oogst niet andermans farms dit valt onder grieven (tenzij je toestemming hebt).
+            - Geen xray of andere clients.
+            - Dus... niet cheaten
+            - Ga niet overal random blokken neer plaatsen.
+            - Staff teleport niet. (alleen als je vast zit door een bug.)
+            
             **Trade zone:**
-            -In de trade zone mag je geen farms maken en geen 'grote' redstone projecten.
-            - Wil je een grote shop bouwen? Vraag het eerst aan bij een van ons.`)
+            - Je mag niet je base bouwen binnen de trade zone.
+            - De trade zone is 1000 blokken vanaf X: 0 Y:74 Z: 0
+            
+            **The end:**
+            - Vanaf het moment dat de dragon verslagen is spawnt er ergens binnen de 30 dagen een nieuwe dragon.
+            - Op het hoofd eiland geen 'grote dingen' bouwen.
+            - Ieder team mag maximaal 1 enderman farm hebben.
+            
+            **Consequenties bij verbreken van regels:**
+            - Bij grieven/stelen: word bepaald aan de schade die je hebt aangericht. (minimaal 1 dag ban)
+            - Bij schelden met hedendaagse ziektes: 7 dagen ban
+            - Bij base bouwen in de trade zone/the end: Je base word weggehaald en je spullen krijg je niet terug!
+            Dat voor de regels
+            En het volgende onder de tab info:`)
             .setColor("#4EF0E8")
 
         message.delete().catch(err => console.log(err));
