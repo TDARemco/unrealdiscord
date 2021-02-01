@@ -19,7 +19,7 @@ client.on("message", (message) => {
     message.channel.send("That would be your own fault");
   } else
 
-  if (message.content.startsWith("Goot bot")) {
+  if (message.content.startsWith("Good bot")) {
     message.channel.send("Prrrrrrr!");
   }
 
