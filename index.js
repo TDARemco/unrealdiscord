@@ -14,18 +14,17 @@ client.categories = fs.readdirSync("./commands/");
 
 });
 
-client.on("ready", async () => {
+client.on("message", (message) => {
+  if (message.content.startsWith("ping")) {
+    message.channel.send("pong!");
+  } else
 
-    console.log(`${client.user.username} is online!`)
+  if (message.content.startsWith("foo")) {
+    message.channel.send("bar!");
+  }
 
     client.user.setActivity('NextGlitch', { type: 'PLAYING' });
 
-});
-
-bot.on('message', (message) => {
-    if(message.content == 'ping') {
-        message.reply('Pong');
-    }
 });
 
 client.login(process.env.token);
