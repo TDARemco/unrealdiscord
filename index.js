@@ -15,12 +15,16 @@ client.categories = fs.readdirSync("./commands/");
 });
 
 client.on("message", (message) => {
-  if (message.content.startsWith("ping")) {
-    message.channel.send("pong!");
+  if (message.content.startsWith("i am banned")) {
+    message.channel.send("That would be your own fault");
   } else
 
-  if (message.content.startsWith("foo")) {
-    message.channel.send("bar!");
+  if (message.content.startsWith("Goot bot")) {
+    message.channel.send("Prrrrrrr!");
+  }
+
+  if (message.content.startsWith("Bad bot")) {
+    message.channel.send("Sorry papa!");
   }
 
     client.user.setActivity('NextGlitch', { type: 'PLAYING' });
