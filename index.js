@@ -27,6 +27,10 @@ client.on("message", (message) => {
     message.channel.send("Sorry papa!");
   }
 
+  if (message.content.startsWith("invite link")) {
+    message.channel.send("Here is a link to invite people: https://discord.gg/MT2Js4rBGm");
+  }
+
     client.user.setActivity('NextGlitch', { type: 'PLAYING' });
 
 });
