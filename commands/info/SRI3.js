@@ -11,7 +11,7 @@ module.exports = {
             .setTitle("Article 3")
             .setDescription(`    
             **Support**
-            How to you get help>
+            How do you get help?
 
             **Article 3**
             - You can create a ticket in the: "create-ticket" chat.
