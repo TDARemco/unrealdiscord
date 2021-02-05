@@ -13,7 +13,10 @@ module.exports = {
             if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You can't you that command!")
             let dMessage = args.join(" ").slice(22);
             let successfullyembed = new Discord.MessageEmbed()
-            let myRole = message.guild.roles.get("807344215750213692");
+            let role = message.guild.roles.cache.find(r => r.name === "TEST");
+            let member = message.mentions.members.first();
+            member.roles.add(role).catch(console.error);
+            member.roles.remove(role).catch(console.error);
             message.delete().catch(err => console.log(err));
             message.channel.send(sayMessage);
 
