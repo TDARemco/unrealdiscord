@@ -66,7 +66,7 @@ client.on("message", (message) => {
   if (message.content.startsWith("Invite Link")) {
     message.channel.send("Here is a link to invite people: https://discord.gg/MT2Js4rBGm");
   }
-    client.user.setActivity('NextGlitch!', { type: 'PLAYING' });
+    client.user.setActivity('www.nextglitch.eu!', { type: 'PLAYING' });
 
 });
 
