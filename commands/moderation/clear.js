@@ -5,9 +5,9 @@ module.exports = {
     description: 'clear',
     run: async (bot, message, args, guild) => {
 
-        if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Je hebt geen toestemming");
+        if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("Nop, you are not a moderator!");
 
-        if (!args[0]) return message.reply("Zet je bril eens op! Je moet wel een aantal toevoegen!");
+        if (!args[0]) return message.reply("Please tell me how much messages i have to delete");
 
         if (Number.isInteger(parseInt(args[0]))) {
 
@@ -17,22 +17,22 @@ module.exports = {
 
                 if (args[0] == 0) {
 
-                    message.reply(`Probeer je nu 0 berichten te verwijderen...`).then(msg => msg.delete({ timeout: 3000 }));
+                    message.reply(`Do you really try to remove 0 messages?`).then(msg => msg.delete({ timeout: 3000 }));
 
                 } else if (args[0] == 1) {
 
-                    message.reply(`Ik heb 1 bericht voor je verwijderd!`).then(msg => msg.delete({ timeout: 3000 }));
+                    message.reply(`I removed 1 message for you`).then(msg => msg.delete({ timeout: 3000 }));
 
                 } else {
 
-                    message.reply(`Ik heb ${args[0]} berichten voor je verwijderd.`).then(msg => msg.delete({ timeout: 3000 }));
+                    message.reply(`I deleted ${args[0]} messages for you.`).then(msg => msg.delete({ timeout: 3000 }));
 
                 }
 
             });
 
         } else {
-            return message.reply("Zet je bril eens op! Je moet wel een aantal toevoegen!");
+            return message.reply("Please tell me how much messages i have to delete");
         }
     }
 }
