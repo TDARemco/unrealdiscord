@@ -18,7 +18,7 @@ module.exports = {
             var botIcon = bot.user.displayAvatarURL;
 
             var botEmbed = new discord.MessageEmbed()
-                .setTitle("EWA - VOTE")
+                .setTitle("Glitch - VOTE")
                 .setDescription(`${dMessage}
                                  
                                  **Posted By:** ${message.author}`)
