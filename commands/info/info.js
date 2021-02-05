@@ -8,7 +8,7 @@ module.exports = {
         var botIcon = bot.user.displayAvatarURL;
 
         var botEmbed = new discord.MessageEmbed()
-            .setTitle("Accept the Rules")
+            .setTitle("Information")
             .setDescription(`    
             **Agreed**
             Welcome to our discord. NextGlich is a return org.
