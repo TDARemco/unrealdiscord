@@ -3,7 +3,7 @@ module.exports = {
     name: 'reject',
     category: 'announcements',
     description: 'reject',
-    run: async (bot, message, args) => {
+    run: async (bot, message, args, myRole, guild) => {
 
         const discord = require("discord.js");
 
@@ -13,10 +13,7 @@ module.exports = {
             if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You can't you that command!")
             let dMessage = args.join(" ").slice(22);
             let successfullyembed = new Discord.MessageEmbed()
-            let role = message.guild.roles.cache.find(r => r.name === "TEST");
-            let member = message.mentions.members.first();
-            member.roles.add(role).catch(console.error);
-            member.roles.remove(role).catch(console.error);
+            let myRole = message.guild.roles.cache.get("264410914592129025");
             message.delete().catch(err => console.log(err));
             message.channel.send(sayMessage);
 
