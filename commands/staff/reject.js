@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 module.exports = {
-    name: 'accept',
+    name: 'reject',
     category: 'announcements',
-    description: 'accept',
+    description: 'reject',
     run: async (bot, message, args) => {
 
         const discord = require("discord.js");
@@ -13,6 +13,7 @@ module.exports = {
             if (!message.member.hasPermission("MANAGE_MESSAGES")) return message.reply("You can't you that command!")
             let dMessage = args.join(" ").slice(22);
             let successfullyembed = new Discord.MessageEmbed()
+            let myRole = message.guild.roles.get("807344215750213692");
             message.delete().catch(err => console.log(err));
             message.channel.send(sayMessage);
 
