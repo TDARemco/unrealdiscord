@@ -8,26 +8,20 @@ module.exports = {
         var botIcon = bot.user.displayAvatarURL;
 
         var botEmbed = new discord.MessageEmbed()
-            .setTitle("Informatie")
+            .setTitle("Article 1")
             .setDescription(`    
-            **Server ip:**
-            Etalive.mygs.co
+            **Discord Rules**
+            The rules we follow on our discord server.
 
-            **Conecept uitleg:**
-            Een vanilla survival server zonder een ingame currency.
-            Iedereen begint op de zelfde locatie genaamd het 0 punt.
-            Je hebt vanaf het 0 punt een zone van 1000 blokken genaamd de trade zone.
-            Hier mag je je base niet maken, Het is dus dan ook de bedoeling om hier alleen shops te maken.
-            Wanneer de enderdragon verslagen hebben dan houd het spel niet op....
-            Als team zijnde ga je dan projecten maken (bijvoorbeeld een kasteel bouwen of een stad bouwen.)
-            Zo krijgen we uiteindelijk een wereld met veel mooie bouwwerken die we van elkaar kunnen bewonderen.
-            Niks word ingecheat dus ook niet vanuit staff.
-
-            **Live map:**
-            http://51.195.33.175:8123/
-            **seed:**
-            8426026102288270951`)
-            .setColor("#34c9eb")
+            **Article 1**
+            - Respect each other, we do not accept toxic behaviour.
+            - Do not use 3rth party discord software.
+            - Racism of anykind will get you perm banned.
+            - Homophobia / Sexcism is both not allowed.
+            - You are not allowed to sell league of legends accounts in here.
+            - Advertising other servers / sites is not allowed.
+            - Do not ask for ranks.`)
+            .setColor("#65acad")
 
         message.delete().catch(err => console.log(err));
         return message.channel.send(botEmbed);
