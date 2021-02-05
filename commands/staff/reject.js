@@ -3,7 +3,7 @@ module.exports = {
     name: 'reject',
     category: 'announcements',
     description: 'reject',
-    run: async (bot, message, args, myRole, guild) => {
+    run: async (bot, message, args, guild) => {
 
         const discord = require("discord.js");
 
