@@ -19,7 +19,27 @@ client.on("message", (message) => {
     message.channel.send("That would be your own fault");
   } else
 
+  if (message.content.startsWith("I am banned")) {
+    message.channel.send("That would be your own fault");
+  } 
+
+  if (message.content.startsWith("I Am banned")) {
+    message.channel.send("That would be your own fault");
+  }
+
+  if (message.content.startsWith("I Am Banned")) {
+    message.channel.send("That would be your own fault");
+  }
+
   if (message.content.startsWith("Good bot")) {
+    message.channel.send("Prrrrrrr!");
+  }
+
+  if (message.content.startsWith("good bot")) {
+    message.channel.send("Prrrrrrr!");
+  }
+
+  if (message.content.startsWith("Good Bot")) {
     message.channel.send("Prrrrrrr!");
   }
 
@@ -27,10 +47,25 @@ client.on("message", (message) => {
     message.channel.send("Sorry papa!");
   }
 
+  if (message.content.startsWith("bad bot")) {
+    message.channel.send("Sorry papa!");
+  }
+
+  if (message.content.startsWith("Bad Bot")) {
+    message.channel.send("Sorry papa!");
+  }
+
   if (message.content.startsWith("invite link")) {
     message.channel.send("Here is a link to invite people: https://discord.gg/MT2Js4rBGm");
   }
 
+  if (message.content.startsWith("Invite link")) {
+    message.channel.send("Here is a link to invite people: https://discord.gg/MT2Js4rBGm");
+  }
+
+  if (message.content.startsWith("Invite Link")) {
+    message.channel.send("Here is a link to invite people: https://discord.gg/MT2Js4rBGm");
+  }
     client.user.setActivity('NextGlitch!', { type: 'PLAYING' });
 
 });
