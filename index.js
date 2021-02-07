@@ -55,6 +55,22 @@ client.on("message", (message) => {
     message.channel.send("Sorry papa!");
   }
 
+  if (message.content.startsWith("join a team")) {
+    message.channel.send("You can find the information about joining a team in: #join-a-team");
+  }
+
+  if (message.content.startsWith("Join a team")) {
+    message.channel.send("You can find the information about joining a team in: #join-a-team");
+  }
+
+  if (message.content.startsWith("join A team")) {
+    message.channel.send("You can find the information about joining a team in: #join-a-team");
+  }
+
+  if (message.content.startsWith("join a Team")) {
+    message.channel.send("You can find the information about joining a team in: #join-a-team");
+  }
+
   if (message.content.startsWith("invite link")) {
     message.channel.send("Here is a link to invite people: https://discord.gg/wQd4ejD8r9");
   }
