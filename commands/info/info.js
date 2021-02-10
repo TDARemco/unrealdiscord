@@ -11,7 +11,7 @@ module.exports = {
             .setTitle("Information")
             .setDescription(`    
             **Agreed**
-            Welcome to our discord. NextGlich is a return org.
+            Welcome to our discord. NextGlich is a returning org.
             We have experienced and active staff. This is one of the reason that we can manage to help you all out so well.
             Creating teams, Hosting events, and even some fun gaming stuff!
             Everyone is welcome, every skill level and every one.
